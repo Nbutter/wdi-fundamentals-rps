@@ -46,43 +46,35 @@ function getWinner(playerMove,computerMove) {
     
     case 'rock':
     	switch (computerMove) {
-    	case 'rock':
-    		return 'tie';
     	case 'paper':
     		return 'computer';
     	case 'scissors':
     		return 'player';
     	default:
-    		return 'error';
+    		return 'tie';
     		}
     	break;
     case 'paper':
     	switch (computerMove) {
     	case 'rock':
     		return 'player';
-    	case 'paper':
-    		return 'tie';
     	case 'scissors':
     		return 'computer';
     	default: 
-    		return 'error';
-    	    
-    	}    
-    		break;
-
+    		return 'tie';    
+    		}    
+    	break;
     case 'scissors':
     	switch (computerMove) {
     	case 'rock':
     		return 'computer';
     	case 'paper':
     		return 'player';
-    	case 'scissors':
-    		return 'tie';
     	default:
-    		return 'error';
+    		return 'tie';
     		}
     	break;
-    	}
+    }
 }
 
 function playToFive() {
